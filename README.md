@@ -35,5 +35,5 @@
 - **Backend:** Java, Spring Framework
 - **База данных:** PostgreSQL
 - **Инструмент сборки проекта:** Maven
-- **Зависимости:** Lombok, Spring Boot, PostgreSQL
+- **Зависимости:** Lombok, Spring Data JPA (Hibernate), Spring Web, PostgreSQL
 
