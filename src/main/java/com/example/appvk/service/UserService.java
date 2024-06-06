@@ -2,19 +2,17 @@ package com.example.appvk.service;
 
 import com.example.appvk.model.User;
 import com.example.appvk.repository.UserRepository;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@RequiredArgsConstructor
 @Service
 public class UserService {
     private final UserRepository userRepository;
 
-    @Autowired
-    public UserService(UserRepository userRepository){
-        this.userRepository = userRepository;
-    }
 
     public void createUser(User user){
         userRepository.save(user);

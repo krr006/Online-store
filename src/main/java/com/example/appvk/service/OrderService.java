@@ -8,15 +8,12 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@RequiredArgsConstructor
 @Service
 
 public class OrderService {
     private final OrderRepository orderRepository;
 
-    @Autowired
-    public OrderService(OrderRepository orderRepository){
-        this.orderRepository = orderRepository;
-    }
 
     public void createOrder(Order order){
         orderRepository.save(order);
